@@ -237,7 +237,9 @@ axios({
 }) 
 ```
 
-### Lab - Star Wars
+## Labs
+
+### Star Wars
 
 - [Star Wars API](https://swapi.co/)
 
@@ -250,7 +252,7 @@ axios({
 - director
 - producer
 
-### Lab - Pokemon
+### Pokemon
 
 - [Pokemon API](https://pokeapi.co/)
 
@@ -262,7 +264,7 @@ axios({
 - moves as list of names
 - ability as list of names
 
-### Lab - Dogs
+### Dogs
 
 - [Dog API](https://dog.ceo/dog-api/)
 
@@ -272,7 +274,7 @@ axios({
 Challenge
 - Make each dog breed clickable and on click display all dog images for that breed.
 
-### Lab Challenge - GOT
+### GOT
 
 - [Game of Thrones API](https://anapioficeandfire.com/)
 
