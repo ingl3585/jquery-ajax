@@ -232,7 +232,7 @@ $.ajax({
 - [Star Wars API](https://swapi.co/)
 
 1.  On page load, make an AJAX call to get all the people in Star Wars and display their names in a list
-2.  On page lod, make an AJAX call to get the data for film 1 an add the following data to the page
+2.  Create a button for each film that will make an AJAX call to get the data for the film an add the following data to the page
 - title
 - release_date 
 - episode id
@@ -248,22 +248,20 @@ $.ajax({
 - name
 - height
 - weight
-- sprites front_default as image
+- sprites front_default as image 
 - moves as list of names
 - ability as list of names
+
+2. Create a form for a user to search by pokemon name and view the same data sa above
 
 ### Dogs
 
 - [Dog API](https://dog.ceo/dog-api/)
 
 1.  On page load, make an AJAX call to display a random dog image on the page.
-2.  On page load, make an AJAX call to list all the dog breeds on the page.
+2.  Create a form for a user to search by dog breed
+3.  Create a button to make an AJAX call to list all the dog breeds on the page.
 
 Challenge
 - Make each dog breed clickable and on click display all dog images for that breed.
 
-### GOT
-
-- [Game of Thrones API](https://anapioficeandfire.com/)
-
-Research the data on your own and use it how you'd like!
