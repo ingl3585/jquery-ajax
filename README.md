@@ -120,9 +120,9 @@ We make AJAX requests with
 - [Axios](https://github.com/axios/axios)
 - many other helpful AJAX libraries
 
-## Axios
+## jQuery AJAX
 
-We will be using Axios for our AJAX requests.  Axios is a very popular library and we can use it in the browser and with node.
+We will be using jQuery for our AJAX requests. 
 
 ### Request
 - method
@@ -137,7 +137,7 @@ We will be using Axios for our AJAX requests.  Axios is a very popular library a
 
 *Get Request Example*
 ```js
-axios({
+$.ajax({
   method: 'get',
   url: 'https://swapi.co/api/people/1'
 });
@@ -145,7 +145,7 @@ axios({
 
 *Post Request Example*
 ```js
-axios({
+$.ajax({
   method: 'post',
   url: 'https://swapi.co/api/people/1',
   data: {
@@ -154,18 +154,6 @@ axios({
   }
 });
 ```
-
-### Response Object
-
-- *data*: the payload returned from the server. By default, Axios expects JSON and will parse this back into a JavaScript object for you.
-- *status*: the HTTP code returned from the server.
-- *statusText*: the HTTP status message returned by the server.
-
-### Error Object
-
-- *message*: the error message text.
-- *response*: the response object (if received) as described in the previous section.
-- *request*: the actual XMLHttpRequest object (when running in a browser).
 
 ### Handling Responses
 
@@ -179,7 +167,7 @@ To work with asynchronous javascript, we are going to use promises and a promise
 
 ```js
 // Example 1
-axios({
+$.ajax({
   url: 'https://dog.ceo/api/breed/boxer/images/random',
   method: 'get',
 }).then().catch() // .then and .catch are chained at the end of the request 
@@ -187,7 +175,7 @@ axios({
 
 It is easier to ready if we place them on the next line
 ```js
-axios({
+$.ajax({
   url: 'https://dog.ceo/api/breed/boxer/images/random',
   method: 'get',
 })
@@ -199,7 +187,7 @@ The `.then` and `.catch` method want us to pass them functions to run.
 `.then` wants a function to run if the request succeeds 
 `.catch` wants a function to run if the request fails
 ```js
-axios({
+$.ajax({
   url: 'https://dog.ceo/api/breed/boxer/images/random',
   method: 'get',
 })
@@ -209,7 +197,7 @@ axios({
 
 We often use anonymous, fat arrow functions.
 ```js
-axios({
+$.ajax({
   url: 'https://dog.ceo/api/breed/boxer/images/random',
   method: 'get',
 })
@@ -223,7 +211,7 @@ axios({
 
 `axios` will pass our functions the `response` or `error` object so that we can access the data that the API returns to us.
 ```js
-axios({
+$.ajax({
   url: 'https://dog.ceo/api/breed/boxer/images/random',
   method: 'get',
 })
